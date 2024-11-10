@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contents">
+    
+        <canvas id="myCanvas" style="border:1px solid black;">
+            Your browser does not support HTML5 Canvas.
+        </canvas>
+
+        <div class="properties">
+
+            <div class="colors">
+                <label for="colors">Choose a color:</label>
+                <select name="colors" id="colors">
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+
+            <div class="shapes">
+                <label for="shapes">Choose a Shape:</label>
+                <select name="shapes" id="shapes">
+                    <option value="circle">Circle</option>
+                    <option value="square">Square</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="triangle">Triangle</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

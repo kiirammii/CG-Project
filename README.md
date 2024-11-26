@@ -6,9 +6,9 @@
 <table align="center">
     <tr>
         <td align="center">
-        <img style="border-radius: 50%; width="100px;"" src="" width="100px;"><br>
+        <img style="border-radius: 50%; width="100px;"" src="https://avatars.githubusercontent.com/u/147703158?v=4" width="100px;"><br>
         <sub>
-        <b>Name</br>
+        <b>Duarte Fernandes</br>
         </td>
         <td align="center">
         <img style="border-radius: 50%; width="100px;"" src="https://avatars.githubusercontent.com/u/115722559?v=4" width="100px;"><br>

@@ -36,10 +36,13 @@
 }
 
 #arrow{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 html {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -66,9 +69,19 @@ html {
     flex-direction: column;
 }
 
+.sizeValue {
+    display: flex;
+    justify-content: space-between;
+}
+
 .speed {
     display: flex;
     flex-direction: column;
+}
+
+.speedValue {
+    display: flex;
+    justify-content: space-between;
 }
 
 .angle {
@@ -80,6 +93,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 input {

@@ -1,6 +1,6 @@
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth / 1.5;
+canvas.width = window.innerWidth / 2;
 canvas.height = window.innerHeight / 1.5;
 
 const shapes = [];

@@ -55,3 +55,33 @@ html {
     align-items: center;
     gap: 10px
 }
+
+.shapes {
+    display: flex;
+    flex-direction: column;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+}
+
+.speed {
+    display: flex;
+    flex-direction: column;
+}
+
+.angle {
+    display: flex;
+    flex-direction: column;
+}
+
+.angleValue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+}

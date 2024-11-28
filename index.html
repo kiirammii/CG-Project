@@ -33,22 +33,33 @@
             </div>
 
             <div class="size">
-                <label for="myRange">Size: </label>
+                <div class="sizeValue">
+                    <label for="myRange">Size</label>
+                    <span id="sizeValue">25</span>
+                </div>
                 <input type="range" name="shapeSize" id="myRange" class="slider" min="1" max="50">
-                <span id="sizeValue">25</span>
+                
             </div>
 
             <div class="speed">
-                <label for="myRangeSpeed">Speed: </label>
+                <div class="speedValue">
+                    <label for="myRangeSpeed">Speed</label> 
+                    <span id="speedValue">5</span>
+                </div>
                 <input type="range" name="shapeSpeed" id="myRangeSpeed" class="slider" min="1" max="10">
-                <span id="speedValue">5</span>
+                
+                
             </div>
 
             <div class="angle">
-                <label for="angleRange">Angle: </label>
+                <div class="angleValue">
+                    <label for="angleRange">Angle</label>
+                    <div class="angleArrow">
+                        <span id="angleValue">180</span>
+                        <div id="arrow" style="display: inline-block; transform: rotate(0deg);">↑</div>
+                    </div>
+                </div>
                 <input type="range" name="shapeAngle" id="angleRange" class="slider" min="0" max="360">
-                <span id="angleValue">0</span>
-                <div id="arrow" style="display: inline-block; transform: rotate(0deg);">↑</div>
             </div>
 
         </div>

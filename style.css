@@ -1,14 +1,25 @@
+:root {
+    --bg-color: #35324d;
+    --text-color: #FFFFFF;
+    --prop-color: #FFFFFF;
+
+    --slider-bullet: #8463ba;
+}
+
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    background: #FFFFFF;
+    background: var(--prop-color);
     outline: none;
-    opacity: 0.7;
     -webkit-transition: .2s;
-    transition: opacity .2s;
     border-radius: 100px;
     width: 300px;
     height:25px
+}
+
+.slider:active {
+    background-color: #7e7e7e;
+    transition: background-color .2s;
 }
 
 .slider:hover {
@@ -20,7 +31,7 @@
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #8463ba;
+    background: var(--slider-bullet);
     cursor: pointer;
     border-radius: 50%;
     border: 2px solid #FFFFFF;
@@ -41,8 +52,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2c2945;
-    color: #ffffff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 canvas {
@@ -52,14 +63,22 @@ canvas {
 .properties {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .contents {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px
+    gap: 70px
+}
+
+hr {
+    width: 90%;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    border-top: 1px dashed;
+    border-bottom: none;
 }
 
 .colors, .shapes, .size, .speed, .angle {
@@ -80,10 +99,6 @@ canvas {
     width: 100%;
 }
 
-.circle, .square, .triangle {
-    width: 65px;
-}
-
 .shape-btn {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 450;
@@ -91,11 +106,13 @@ canvas {
     border: none;
     border-radius: 100px;
     height: 25px;
+    background-color: var(--prop-color);
 }
 
 .shape-btn:hover {
     background-color: #7e7e7e;
     cursor: pointer;
+    transition: background-color 0.2s linear;
 }
 
 .shape-btn:active {
@@ -106,7 +123,6 @@ canvas {
 .props {
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
 
 #colorLabel {
@@ -119,4 +135,8 @@ input {
     border-radius: 100px;
     height: 25px;
     cursor: pointer;
+}
+
+span {
+    font-weight: 400;
 }

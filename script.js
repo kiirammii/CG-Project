@@ -103,21 +103,28 @@ function draw() {
         ctx.fill();
         ctx.closePath();
 
+       
+            shape.velocityY += gravity;
 
-        shape.velocityY += gravity;
-
-
-        shape.x += shape.velocityX;
-        shape.y += shape.velocityY;
+            // shape.velocityX *= 0.99
+            // shape.velocityY *= 0.99
+            shape.x += shape.velocityX;
+            shape.y += shape.velocityY;
+        
+        
 
 
         if (shape.x - shape.radius < 0 || shape.x + shape.radius > canvas.width) {
+            shape.velocityX *= 0.8
             shape.velocityX = -shape.velocityX;
         }
         if (shape.y - shape.radius < 0 || shape.y + shape.radius > canvas.height) {
+            shape.y = canvas.height- shape.radius  
+            shape.velocityY *= 0.8
             shape.velocityY = -shape.velocityY;
         }
 
+       
 
         shapes.forEach(otherShape => {
             if (shape !== otherShape) {
@@ -126,7 +133,7 @@ function draw() {
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < shape.radius + otherShape.radius) {
-
+// tb diminuir aqui!
                     shape.velocityX = -shape.velocityX;
                     shape.velocityY = -shape.velocityY;
                     otherShape.velocityX = -otherShape.velocityX;
@@ -134,6 +141,9 @@ function draw() {
                 }
             }
         });
+
+
+       
     });
 
     requestAnimationFrame(draw);

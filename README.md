@@ -40,4 +40,3 @@ Comunicação entre os membros da equipa:
 ## Sobre Este Projeto:
 
 O Projeto tem como seu objetivo criar uma simulação interativa de objetos geométricos com comportamento físico realista (gravidade e colisões), permitindo a interação direta do utilizador com estes, usando o cursor do rato, possibilitando a manipulação e movimentação dos objetos no canvas, assim como a mudança de cor e tamanho dos mesmos.
-O utilizador pode manipular os objetos após a sua criação, aplicando força direta (por exemplo, arrastando-os com o cursor).

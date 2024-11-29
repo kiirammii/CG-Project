@@ -2,7 +2,7 @@
 <hr>
 
 <div align="center">
-<h1>CG Project</h1>
+<h2>CG Project</h2>
 </div>
 
 ## Equipa:

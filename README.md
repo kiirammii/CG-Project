@@ -1,7 +1,7 @@
 ![Generic badge](https://img.shields.io/badge/status-%20finished-54CC74)
 
 <div align="center">
-<h1>CG Project</h1>
+<h1>Geometry Playground</h1>
 </div>
 
 ## Equipa:

@@ -18,15 +18,15 @@
 
         <div class="properties">
 
-            <div class="colors">
-                <label for="colors">Choose a color:</label>
+            <div class="props colors">
+                <label for="colors" class="labels">Color</label>
                 <div class="color-picker">
-                    <input type="color" id="colorInput" value="#ff0000">
+                    <input type="color" id="colorInput" value="#FFFFFF" style="background-color: #FFFFFF;">
                 </div>
             </div>
 
-            <div class="shapes">
-                <label for="shapes">Choose a Shape:</label>
+            <div class="props shapes">
+                <label for="shapes" class="labels">Shape</label>
                 <select name="shapes" id="shapes">
                     <option value="circle">Circle</option>
                     <option value="square">Square</option>
@@ -35,26 +35,23 @@
                 </select>
             </div>
 
-            <div class="size">
+            <div class="props size">
                 <div class="sizeValue">
                     <label for="myRange">Size</label>
                     <span id="sizeValue">25</span>
                 </div>
                 <input type="range" name="shapeSize" id="myRange" class="slider" min="1" max="50">
-                
             </div>
 
-            <div class="speed">
+            <div class="props speed">
                 <div class="speedValue">
                     <label for="myRangeSpeed">Speed</label> 
                     <span id="speedValue">5</span>
                 </div>
                 <input type="range" name="shapeSpeed" id="myRangeSpeed" class="slider" min="1" max="10">
-                
-                
             </div>
 
-            <div class="angle">
+            <div class="props angle">
                 <div class="angleValue">
                     <label for="angleRange">Angle</label>
                     <div class="angleArrow">

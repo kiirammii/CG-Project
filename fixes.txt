@@ -1,4 +1,6 @@
 - colisões
 - baixar velocidade quando ressalta
 - mover formas com o cursor do rato
-- diminuir speed e arranjar a cenita do angulo
+- diminuir speed
+- escolher 3 cores para paleta
+- arranjar a cenita do angulo

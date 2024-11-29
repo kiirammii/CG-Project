@@ -1,26 +1,30 @@
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth / 2;
-canvas.height = window.innerHeight / 1.5;
+canvas.width = 500;
+canvas.height = 500;
 
 const shapes = [];
 let currentShape = 'circle';
-let currentColor = '#FF0000';
+let currentColor = '#FFFFFF';
 let currentSize = 25;
 let currentSpeed = 5;
 let currentAngle = 0;
-const gravity = 0.1; // Gravity constant
+const gravity = 0.1; // gravidade constante
 
+// pegar no valor da cor
 const colorInput = document.getElementById('colorInput');
 colorInput.addEventListener('input', (event) => {
     currentColor = event.target.value;
+    colorInput.style.backgroundColor = currentColor
 });
 
+// pegar no valor da forma
 const shapeSelect = document.getElementById('shapes');
 shapeSelect.addEventListener('change', (event) => {
     currentShape = event.target.value;
 });
 
+// pegar no valor do tamanho
 const sizeSlider = document.getElementById('myRange');
 const sizeValue = document.getElementById('sizeValue');
 sizeSlider.addEventListener('input', (event) => {
@@ -28,6 +32,7 @@ sizeSlider.addEventListener('input', (event) => {
     sizeValue.textContent = currentSize;
 });
 
+// pegar no valor da velocidade
 const speedSlider = document.getElementById('myRangeSpeed');
 const speedValue = document.getElementById('speedValue');
 speedSlider.addEventListener('input', (event) => {
@@ -35,6 +40,7 @@ speedSlider.addEventListener('input', (event) => {
     speedValue.textContent = currentSpeed;
 });
 
+// pegar no valor do ângulo e ajustar a seta
 const angleSlider = document.getElementById('angleRange');
 const angleValue = document.getElementById('angleValue');
 const arrow = document.getElementById('arrow');
@@ -63,7 +69,7 @@ canvas.addEventListener('click', (event) => {
 });
 
 function draw() {
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = '#b5b5b5';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     shapes.forEach(shape => {

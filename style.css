@@ -41,7 +41,7 @@
 
 html {
     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 550;
+    font-weight: 450;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -51,6 +51,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #2c2945;
+    color: #ffffff;
 }
 
 canvas {
@@ -59,16 +60,24 @@ canvas {
     border: 20px
 }
 
+.properties {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px
+}
+
 .contents {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 40px
 }
 
 .shapes {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .size {
@@ -79,6 +88,8 @@ canvas {
 .sizeValue {
     display: flex;
     justify-content: space-between;
+    margin-left: 15px;
+    width: 90%
 }
 
 .speed {
@@ -89,6 +100,8 @@ canvas {
 .speedValue {
     display: flex;
     justify-content: space-between;
+    margin-left: 15px;
+    width: 90%
 }
 
 .angle {
@@ -101,8 +114,43 @@ canvas {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-left: 15px;
+    width: 90%
 }
 
-input {
+
+
+input, .slider {
     width: 300px;
+    border-radius: 100px;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    background: #8463ba;
+    border: 2px solid #fff;
+}
+
+.props {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.labels {
+    margin-left: 15px
+}
+
+/* Remove the default border and outline around the color input */
+input[type="color"] {
+    padding: 0;               /* Remove any padding */
+    width: 100%;              /* Set the size of the color picker */
+    height: 30px;             /* Set the size of the color picker */
+    border-radius: 100px;       /* Make it round */
+    background-color: transparent; /* Make sure there's no default background */
+}
+
+/* Optional: Add a hover effect for better UX */
+input[type="color"]:hover {
+    opacity: 0.8;
 }

@@ -7,7 +7,7 @@
 
 ## Equipa:
 
-<table align="center">
+<table align="center" style="border: none">
     <tr>
         <td align="center">
         <img style="border-radius: 50%; width="100px;"" src="https://avatars.githubusercontent.com/u/147703158?v=4" width="100px;"><br>

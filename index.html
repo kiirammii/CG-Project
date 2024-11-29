@@ -19,20 +19,24 @@
         <div class="properties">
 
             <div class="props colors">
-                <label for="colors" class="labels">Color</label>
+                <label for="colors" class="labels" id="colorLabel">Color</label>
                 <div class="color-picker">
-                    <input type="color" id="colorInput" value="#FFFFFF" style="background-color: #FFFFFF;">
+                    <input type="color" id="colorInput" value="#757575" style="background-color: #757575;">
                 </div>
             </div>
 
             <div class="props shapes">
-                <label for="shapes" class="labels">Shape</label>
-                <select name="shapes" id="shapes">
-                    <option value="circle">Circle</option>
-                    <option value="square">Square</option>
-                    <option value="rectangle">Rectangle</option>
-                    <option value="triangle">Triangle</option>
-                </select>
+                <div class="shapeValue">
+                    <label for="shapes" class="labels">Shape</label>
+                    <span id="shapeValue">Circle</span>
+                </div>
+        
+                <div class="shape-buttons">
+                    <button type="button" class="shape-btn" data-shape="circle">Circle</button>
+                    <button type="button" class="shape-btn" data-shape="square">Square</button>
+                    <button type="button" class="shape-btn" data-shape="rectangle">Rectangle</button>
+                    <button type="button" class="shape-btn" data-shape="triangle">Triangle</button>
+                </div>
             </div>
 
             <div class="props size">

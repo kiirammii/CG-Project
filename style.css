@@ -1,16 +1,14 @@
-.size {
-    width: 100%;
-}
-
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    background: #d3d3d3;
+    background: #FFFFFF;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-    border-radius: 5px;
+    border-radius: 100px;
+    width: 300px;
+    height:25px
 }
 
 .slider:hover {
@@ -22,17 +20,10 @@
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #4CAF50;
+    background: #8463ba;
     cursor: pointer;
     border-radius: 50%;
-}
-
-.slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
-    cursor: pointer;
-    border-radius: 50%;
+    border: 2px solid #FFFFFF;
 }
 
 #arrow{
@@ -55,16 +46,13 @@ html {
 }
 
 canvas {
-    border-color: #4CAF50;
     border-radius: 10px;
-    border: 20px
 }
 
 .properties {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    gap: 30px
+    gap: 30px;
 }
 
 .contents {
@@ -74,61 +62,30 @@ canvas {
     gap: 40px
 }
 
-.shapes {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.size {
+.colors, .shapes, .size, .speed, .angle {
     display: flex;
     flex-direction: column;
 }
 
-.sizeValue {
+.shapeValue, .sizeValue, .speedValue, .angleValue {
     display: flex;
     justify-content: space-between;
     margin-left: 15px;
     width: 90%
 }
 
-.speed {
-    display: flex;
-    flex-direction: column;
-}
-
-.speedValue {
+.shape-buttons {
     display: flex;
     justify-content: space-between;
-    margin-left: 15px;
-    width: 90%
+    width: 100%
 }
 
-.angle {
-    display: flex;
-    flex-direction: column;
-}
-
-.angleValue {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 15px;
-    width: 90%
-}
-
-
-
-input, .slider {
-    width: 300px;
+.shape-btn {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 450;
+    font-style: normal;
     border-radius: 100px;
-}
-
-
-input[type="range"]::-webkit-slider-thumb {
-    background: #8463ba;
-    border: 2px solid #fff;
+    height: 25px;
 }
 
 .props {
@@ -137,20 +94,14 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 5px;
 }
 
-.labels {
+#colorLabel {
     margin-left: 15px
 }
 
-/* Remove the default border and outline around the color input */
-input[type="color"] {
-    padding: 0;               /* Remove any padding */
-    width: 100%;              /* Set the size of the color picker */
-    height: 30px;             /* Set the size of the color picker */
-    border-radius: 100px;       /* Make it round */
-    background-color: transparent; /* Make sure there's no default background */
-}
-
-/* Optional: Add a hover effect for better UX */
-input[type="color"]:hover {
-    opacity: 0.8;
+input {
+    width: 300px;
+    border: none;
+    border-radius: 100px;
+    height: 25px;
+    cursor: pointer;
 }

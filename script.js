@@ -5,7 +5,7 @@ canvas.height = 500;
 
 const shapes = [];
 let currentShape = 'circle';
-let currentColor = '#FFFFFF';
+let currentColor = '#757575';
 let currentSize = 25;
 let currentSpeed = 5;
 let currentAngle = 0;
@@ -18,10 +18,16 @@ colorInput.addEventListener('input', (event) => {
     colorInput.style.backgroundColor = currentColor
 });
 
-// pegar no valor da forma
-const shapeSelect = document.getElementById('shapes');
-shapeSelect.addEventListener('change', (event) => {
-    currentShape = event.target.value;
+//pegar no valor da forma
+const shapeButtons = document.querySelectorAll('.shape-btn');
+const shapeName = document.getElementById('shapeValue');
+shapeButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        shapeButtons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        currentShape = event.target.getAttribute('data-shape');
+        shapeName.innerHTML = currentShape.charAt(0).toUpperCase() + currentShape.slice(1);
+    });
 });
 
 // pegar no valor do tamanho

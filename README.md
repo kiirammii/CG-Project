@@ -1,8 +1,7 @@
 ![Generic badge](https://img.shields.io/badge/status-%20finished-54CC74)
-<hr>
 
 <div align="center">
-<h2>CG Project</h2>
+<h1>CG Project</h1>
 </div>
 
 ## Equipa:

@@ -2,6 +2,7 @@
     --bg-color: #35324d;
     --text-color: #FFFFFF;
     --slider-bullet: #6d4f9d;
+    --canvas-border: #251b36;
     --prop-color: #FFFFFF;
     --prop-hover: #b6b6b6;
     --prop-active: #8c8c8c;
@@ -62,7 +63,7 @@ canvas {
     width: 100%;
 }
 
-.shape-btn {
+.shape-btn, #eraseAllButton {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 450;
     font-style: normal;
@@ -72,13 +73,13 @@ canvas {
     background-color: var(--prop-color);
 }
 
-.shape-btn:hover {
+.shape-btn:hover, #eraseAllButton:hover {
     background-color: var(--prop-hover);
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.shape-btn:active {
+.shape-btn:active, #eraseAllButton:active {
     background-color: var(--prop-active);
     transition: background-color 0.3s;
     cursor: pointer;
@@ -141,4 +142,15 @@ input {
 
 span {
     font-weight: 400;
+}
+
+#eraseAllButton {
+    margin-top: 10px;
+    background-color: var(--canvas-border);
+    color: white;
+    width: 90px
+}
+
+#eraseAllButton:hover {
+    background-color: var(--slider-bullet);
 }

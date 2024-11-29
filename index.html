@@ -11,8 +11,7 @@
 </head>
 <body>
     <div class="contents">
-    
-        <canvas id="myCanvas" style="border:5px solid #251b36">
+        <canvas id="myCanvas" style="border:5px solid var(--canvas-border)">
             Your browser does not support HTML5 Canvas.
         </canvas>
 
@@ -70,15 +69,11 @@
                 </div>
                 <hr>
                 <input type="range" name="shapeAngle" id="angleRange" class="slider" min="0" max="360">
-            </div>
-
-            <div class="props erase">
-                <button id="eraseAllButton">Erase All</button>
-            </div>        
-
-
+            </div>   
         </div>
     </div>
+
+    <button id="eraseAllButton">Erase All</button>
 
     <script src="script.js"></script>
 </body>

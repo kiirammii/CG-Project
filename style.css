@@ -77,15 +77,30 @@ canvas {
 .shape-buttons {
     display: flex;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
+}
+
+.circle, .square, .triangle {
+    width: 65px;
 }
 
 .shape-btn {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 450;
     font-style: normal;
+    border: none;
     border-radius: 100px;
     height: 25px;
+}
+
+.shape-btn:hover {
+    background-color: #7e7e7e;
+    cursor: pointer;
+}
+
+.shape-btn:active {
+    background-color: #636363;
+    cursor: pointer;
 }
 
 .props {

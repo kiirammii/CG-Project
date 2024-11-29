@@ -1,44 +1,10 @@
 :root {
     --bg-color: #35324d;
     --text-color: #FFFFFF;
+    --slider-bullet: #6d4f9d;
     --prop-color: #FFFFFF;
-    --slider-bullet: #8463ba;
-    --input-hover: #636363;
-}
-
-.slider {
-    -webkit-appearance: none;
-    appearance: none;
-    background: var(--prop-color);
-    outline: none;
-    -webkit-transition: .2s;
-    border-radius: 100px;
-    width: 300px;
-    height:25px
-}
-
-.slider:active {
-    background-color: #7e7e7e;
-    transition: background-color .2s;
-}
-
-.slider:hover {
-    opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: var(--slider-bullet);
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid #FFFFFF;
-}
-
-#arrow{
-    font-size: 20px;
+    --prop-hover: #b6b6b6;
+    --prop-active: #8c8c8c;
 }
 
 html {
@@ -56,6 +22,13 @@ html {
     color: var(--text-color);
 }
 
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px
+}
+
 canvas {
     border-radius: 10px;
 }
@@ -66,19 +39,9 @@ canvas {
     gap: 40px;
 }
 
-.contents {
+.props {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px
-}
-
-hr {
-    width: 90%;
-    margin-top: 2px;
-    margin-bottom: 6px;
-    border-top: 1px dashed;
-    border-bottom: none;
+    flex-direction: column;
 }
 
 .colors, .shapes, .size, .speed, .angle {
@@ -110,19 +73,58 @@ hr {
 }
 
 .shape-btn:hover {
-    background-color: var(--input-hover);
+    background-color: var(--prop-hover);
     cursor: pointer;
-    transition: background-color 0.2s linear;
+    transition: background-color 0.3s;
 }
 
 .shape-btn:active {
-    background-color: #636363;
+    background-color: var(--prop-active);
+    transition: background-color 0.3s;
     cursor: pointer;
 }
 
-.props {
-    display: flex;
-    flex-direction: column;
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--prop-color);
+    outline: none;
+    border-radius: 100px;
+    width: 300px;
+    height:25px;
+}
+
+.slider:hover {
+    background-color: var(--prop-hover);
+    transition: background-color .3s;
+}
+
+.slider:active {
+    background-color: var(--prop-active);
+    transition: background-color .3s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--slider-bullet);
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+
+#arrow{
+    font-size: 20px;
+}
+
+hr {
+    width: 90%;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    border-top: 1px dashed;
+    border-bottom: none;
 }
 
 #colorLabel {

@@ -2,8 +2,8 @@
     --bg-color: #35324d;
     --text-color: #FFFFFF;
     --prop-color: #FFFFFF;
-
     --slider-bullet: #8463ba;
+    --input-hover: #636363;
 }
 
 .slider {
@@ -110,7 +110,7 @@ hr {
 }
 
 .shape-btn:hover {
-    background-color: #7e7e7e;
+    background-color: var(--input-hover);
     cursor: pointer;
     transition: background-color 0.2s linear;
 }

@@ -5,9 +5,6 @@
 <h1>CG Project</h1>
 </div>
 
-
-<hr>
-
 ## Equipa:
 
 <table align="center">

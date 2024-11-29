@@ -1,4 +1,0 @@
-- colisões
-- baixar velocidade quando ressalta
-- mover formas com o cursor do rato
-- diminuir speed
